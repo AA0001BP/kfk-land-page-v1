@@ -1,0 +1,19 @@
+{
+  "name": "kafeko-landing-page",
+  "version": "1.0.0",
+  "description": "Kafeko wholesale landing page with trade enquiry email backend.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^8.0.7"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

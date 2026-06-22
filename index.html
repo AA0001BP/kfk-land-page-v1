@@ -1,0 +1,2278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kafeko | Wholesale Coffee Shop Supplies for UK Hospitality</title>
+    <meta
+      name="description"
+      content="Kafeko provides UK cafes, coffee shops, bakeries, restaurants and hospitality businesses with wholesale drinks, ingredients, bar supplies and cafe essentials."
+    >
+    <meta name="theme-color" content="#f7f3eb">
+    <meta property="og:title" content="Kafeko | Wholesale Cafe Supplies">
+    <meta
+      property="og:description"
+      content="Trade-only wholesale supply for coffee shops and hospitality teams: dependable stock, fast UK delivery and simple account ordering."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <meta property="og:locale" content="en_GB">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f3eb;
+        --bg-elevated: #fffdf8;
+        --bg-subtle: #eee7dc;
+        --text: #1e2521;
+        --muted: #5f6861;
+        --faint: #8a9088;
+        --line: rgba(38, 46, 41, 0.14);
+        --line-strong: rgba(38, 46, 41, 0.24);
+        --accent: #255c4d;
+        --accent-strong: #174637;
+        --accent-soft: #dbe9e2;
+        --ink: #111714;
+        --dark-band: #14211c;
+        --dark-band-2: #1b2a24;
+        --warning: #aa7138;
+        --shadow: 0 22px 60px rgba(38, 32, 24, 0.12);
+        --shadow-tight: 0 12px 34px rgba(38, 32, 24, 0.1);
+        --radius: 8px;
+        --radius-sm: 5px;
+        --max: 1180px;
+        --header-h: 76px;
+        --space-1: clamp(0.45rem, 0.4rem + 0.2vw, 0.6rem);
+        --space-2: clamp(0.75rem, 0.68rem + 0.35vw, 1rem);
+        --space-3: clamp(1rem, 0.9rem + 0.5vw, 1.35rem);
+        --space-4: clamp(1.4rem, 1.2rem + 0.95vw, 2rem);
+        --space-5: clamp(2rem, 1.6rem + 1.8vw, 3.2rem);
+        --space-6: clamp(3rem, 2.35rem + 3vw, 5rem);
+        --space-7: clamp(4rem, 3rem + 5vw, 7.5rem);
+        --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-display: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(37, 92, 77, 0.08), transparent 34rem),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-elevated) 44%, var(--bg) 100%);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      body.nav-open {
+        overflow: hidden;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      :focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--accent) 65%, white);
+        outline-offset: 3px;
+      }
+
+      ::selection {
+        color: #fffdf8;
+        background: var(--accent);
+      }
+
+      .page {
+        overflow: clip;
+      }
+
+      .container {
+        width: min(calc(100% - 2rem), var(--max));
+        margin-inline: auto;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin: 0 0 var(--space-2);
+        color: var(--accent-strong);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 1.75rem;
+        height: 2px;
+        background: currentColor;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2,
+      .display {
+        color: var(--ink);
+        font-family: var(--font-display);
+        font-weight: 680;
+        letter-spacing: 0;
+        line-height: 0.98;
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin-bottom: var(--space-3);
+        font-size: clamp(3.2rem, 12vw, 7.4rem);
+      }
+
+      h2 {
+        max-width: 13ch;
+        margin-bottom: var(--space-3);
+        font-size: clamp(2.2rem, 6.4vw, 4.55rem);
+      }
+
+      h3 {
+        margin-bottom: 0.55rem;
+        color: var(--ink);
+        font-size: clamp(1.05rem, 1rem + 0.35vw, 1.32rem);
+        line-height: 1.18;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .lede {
+        max-width: 63ch;
+        font-size: clamp(1.02rem, 0.97rem + 0.35vw, 1.22rem);
+      }
+
+      .section {
+        padding-block: var(--space-7);
+      }
+
+      .section-header {
+        display: grid;
+        gap: var(--space-3);
+        align-items: end;
+        margin-bottom: var(--space-5);
+      }
+
+      .section-header p {
+        max-width: 58ch;
+        margin-bottom: 0;
+      }
+
+      .button {
+        --btn-bg: var(--accent);
+        --btn-text: #fffdf8;
+        --btn-border: transparent;
+        display: inline-flex;
+        min-height: 46px;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        border: 1px solid var(--btn-border);
+        border-radius: var(--radius-sm);
+        padding: 0.78rem 1.05rem;
+        color: var(--btn-text);
+        background: var(--btn-bg);
+        font-size: 0.92rem;
+        font-weight: 800;
+        line-height: 1;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-tight);
+      }
+
+      .button svg {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .button-primary {
+        --btn-bg: var(--accent);
+        --btn-text: #fffdf8;
+      }
+
+      .button-secondary {
+        --btn-bg: color-mix(in srgb, var(--bg-elevated) 70%, transparent);
+        --btn-text: var(--ink);
+        --btn-border: var(--line-strong);
+      }
+
+      .button-secondary:hover {
+        --btn-border: var(--accent);
+        color: var(--accent-strong);
+      }
+
+      .button-dark {
+        --btn-bg: #f7f0e4;
+        --btn-text: #16211c;
+      }
+
+      .skip-link {
+        position: fixed;
+        z-index: 999;
+        top: 1rem;
+        left: 1rem;
+        transform: translateY(-150%);
+        border-radius: var(--radius-sm);
+        padding: 0.75rem 1rem;
+        color: #fffdf8;
+        background: var(--accent);
+        font-weight: 800;
+        transition: transform 160ms ease;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .site-header {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: var(--header-h);
+        border-bottom: 1px solid transparent;
+        background: rgba(247, 243, 235, 0.72);
+        backdrop-filter: blur(18px);
+        transition:
+          background 220ms ease,
+          border-color 220ms ease,
+          box-shadow 220ms ease;
+      }
+
+      .site-header.is-scrolled,
+      .site-header.nav-active {
+        border-color: var(--line);
+        background: color-mix(in srgb, var(--bg-elevated) 91%, transparent);
+        box-shadow: 0 12px 34px rgba(16, 22, 18, 0.08);
+      }
+
+      .header-inner {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        min-width: 0;
+        font-weight: 900;
+        letter-spacing: 0;
+      }
+
+      .brand-mark {
+        width: 2.35rem;
+        height: 2.35rem;
+        flex: 0 0 auto;
+      }
+
+      .brand-wordmark {
+        display: grid;
+        line-height: 1.02;
+      }
+
+      .brand-name {
+        color: var(--ink);
+        font-size: 1.02rem;
+      }
+
+      .brand-sub {
+        color: var(--muted);
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+
+      .nav-panel {
+        position: fixed;
+        inset: var(--header-h) 0 auto 0;
+        display: none;
+        border-bottom: 1px solid var(--line);
+        background: var(--bg-elevated);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-panel.is-open {
+        display: block;
+      }
+
+      .nav-content {
+        display: grid;
+        gap: 1rem;
+        padding-block: 1rem 1.35rem;
+      }
+
+      .nav-links {
+        display: grid;
+        gap: 0.2rem;
+      }
+
+      .nav-links a {
+        border-radius: var(--radius-sm);
+        padding: 0.82rem 0.2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: 800;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        color: var(--accent-strong);
+      }
+
+      .header-actions {
+        display: grid;
+        gap: 0.7rem;
+      }
+
+      .header-utility {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .icon-button {
+        display: inline-flex;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        color: var(--ink);
+        background: color-mix(in srgb, var(--bg-elevated) 78%, transparent);
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+      }
+
+      .icon-button:hover {
+        transform: translateY(-1px);
+        border-color: var(--line-strong);
+        background: var(--bg-elevated);
+      }
+
+      .icon-button svg {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .menu-toggle {
+        position: relative;
+      }
+
+      .menu-toggle span {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        border-radius: 999px;
+        background: currentColor;
+        transition:
+          transform 180ms ease,
+          opacity 180ms ease;
+      }
+
+      .menu-toggle span:nth-child(1) {
+        transform: translateY(-5px);
+      }
+
+      .menu-toggle span:nth-child(2) {
+        transform: translateY(5px);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+
+      .hero {
+        position: relative;
+        padding-block: calc(var(--header-h) + var(--space-6)) var(--space-6);
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: var(--space-5);
+        align-items: center;
+      }
+
+      .hero-copy {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-copy .lede {
+        max-width: 49rem;
+        margin-bottom: var(--space-4);
+      }
+
+      .hero-actions,
+      .cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-bottom: var(--space-4);
+      }
+
+      .trust-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+        max-width: 42rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .trust-list li {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+
+      .trust-list svg {
+        width: 1rem;
+        height: 1rem;
+        flex: 0 0 auto;
+        color: var(--accent);
+      }
+
+      .hero-visual {
+        position: relative;
+        min-height: 540px;
+      }
+
+      .hero-photo-wrap {
+        position: absolute;
+        inset: 0 0 74px 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-subtle);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-photo-wrap::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(14, 19, 16, 0.05), rgba(14, 19, 16, 0.54)),
+          linear-gradient(90deg, rgba(37, 92, 77, 0.24), transparent 48%);
+      }
+
+      .hero-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .supply-note {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+        left: 1rem;
+        display: grid;
+        gap: 0.65rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1rem;
+        background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+        box-shadow: var(--shadow-tight);
+      }
+
+      .supply-note-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .supply-note-title {
+        margin: 0;
+        color: var(--ink);
+        font-size: 0.86rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: var(--accent-strong);
+        font-size: 0.74rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .status-pill::before {
+        content: "";
+        width: 0.48rem;
+        height: 0.48rem;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent);
+      }
+
+      .supply-items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.55rem;
+      }
+
+      .supply-item {
+        min-height: 82px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: 0.75rem;
+        background: var(--bg);
+      }
+
+      .supply-item strong {
+        display: block;
+        margin-bottom: 0.2rem;
+        color: var(--ink);
+        font-size: clamp(1.1rem, 1rem + 0.75vw, 1.55rem);
+        line-height: 1;
+      }
+
+      .supply-item span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-weight: 750;
+        line-height: 1.25;
+      }
+
+      .product-stack {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: grid;
+        width: min(48%, 260px);
+        gap: 0.6rem;
+      }
+
+      .product-case {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.75rem;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius-sm);
+        padding: 0.75rem;
+        color: #fffdf8;
+        background: rgba(17, 23, 20, 0.72);
+        backdrop-filter: blur(14px);
+      }
+
+      .product-case svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        color: #cfaa74;
+      }
+
+      .product-case strong {
+        display: block;
+        font-size: 0.86rem;
+        line-height: 1.12;
+      }
+
+      .product-case span {
+        color: rgba(255, 253, 248, 0.72);
+        font-size: 0.72rem;
+        font-weight: 800;
+      }
+
+      .metrics-strip {
+        border-block: 1px solid var(--line);
+        background: color-mix(in srgb, var(--bg-elevated) 72%, transparent);
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric {
+        min-height: 112px;
+        padding: var(--space-3);
+        border-right: 1px solid var(--line);
+      }
+
+      .metric:nth-child(even) {
+        border-right: 0;
+      }
+
+      .metric strong {
+        display: block;
+        margin-bottom: 0.35rem;
+        color: var(--ink);
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        font-weight: 680;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+
+      .metric span {
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .category-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .category-card {
+        position: relative;
+        display: grid;
+        min-height: 250px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1.1rem;
+        background: var(--bg-elevated);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .category-card:hover {
+        transform: translateY(-4px);
+        border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
+        box-shadow: var(--shadow-tight);
+      }
+
+      .category-visual {
+        position: absolute;
+        right: -0.8rem;
+        bottom: -0.8rem;
+        width: 45%;
+        min-width: 118px;
+        max-width: 168px;
+        color: var(--accent);
+        opacity: 0.92;
+      }
+
+      .category-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        max-width: 75%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .category-content p {
+        margin-bottom: 1.2rem;
+        font-size: 0.93rem;
+      }
+
+      .text-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: auto;
+        color: var(--accent-strong);
+        font-size: 0.88rem;
+        font-weight: 900;
+      }
+
+      .text-link svg {
+        width: 0.95rem;
+        height: 0.95rem;
+        transition: transform 180ms ease;
+      }
+
+      .text-link:hover svg {
+        transform: translateX(3px);
+      }
+
+      .dark-section {
+        color: #f4f0e8;
+        background:
+          linear-gradient(135deg, rgba(170, 113, 56, 0.13), transparent 34%),
+          linear-gradient(180deg, var(--dark-band), var(--dark-band-2));
+      }
+
+      .dark-section h2,
+      .dark-section h3,
+      .dark-section .eyebrow {
+        color: #fff8ed;
+      }
+
+      .dark-section p,
+      .dark-section li,
+      .dark-section span {
+        color: rgba(244, 240, 232, 0.74);
+      }
+
+      .dark-section .eyebrow::before {
+        background: #cfaa74;
+      }
+
+      .why-layout {
+        display: grid;
+        gap: var(--space-5);
+      }
+
+      .why-intro {
+        max-width: 34rem;
+      }
+
+      .why-list {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid rgba(244, 240, 232, 0.16);
+      }
+
+      .why-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        padding-block: 1.15rem;
+        border-bottom: 1px solid rgba(244, 240, 232, 0.16);
+      }
+
+      .why-num {
+        display: inline-flex;
+        width: 2.1rem;
+        height: 2.1rem;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(244, 240, 232, 0.22);
+        border-radius: var(--radius-sm);
+        color: #cfaa74;
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      .why-item p {
+        max-width: 48rem;
+        margin-bottom: 0;
+      }
+
+      .steps {
+        display: grid;
+        gap: 1rem;
+        counter-reset: step;
+      }
+
+      .step {
+        position: relative;
+        display: grid;
+        gap: 1rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1.1rem;
+        background: var(--bg-elevated);
+      }
+
+      .step::before {
+        counter-increment: step;
+        content: "0" counter(step);
+        display: inline-flex;
+        width: 2.4rem;
+        height: 2.4rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-sm);
+        color: #fffdf8;
+        background: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 900;
+      }
+
+      .step p {
+        margin-bottom: 0;
+      }
+
+      .catalogue {
+        display: grid;
+        gap: var(--space-4);
+        align-items: stretch;
+      }
+
+      .catalogue-image {
+        min-height: 360px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-subtle);
+      }
+
+      .catalogue-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .range-list {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .range-card {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1rem;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1rem;
+        background: var(--bg-elevated);
+      }
+
+      .range-card h3 {
+        margin-bottom: 0.25rem;
+        font-size: 1.02rem;
+      }
+
+      .range-card p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+
+      .range-code {
+        display: inline-flex;
+        min-width: 4.7rem;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: 0.55rem 0.65rem;
+        color: var(--accent-strong);
+        background: var(--accent-soft);
+        font-size: 0.76rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .proof-grid {
+        display: grid;
+        gap: var(--space-4);
+      }
+
+      .testimonials {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .quote-card {
+        display: grid;
+        gap: 1rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1.1rem;
+        background: var(--bg-elevated);
+      }
+
+      .quote-card blockquote {
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(1.05rem, 1rem + 0.45vw, 1.28rem);
+        line-height: 1.38;
+      }
+
+      .quote-person {
+        display: grid;
+        gap: 0.1rem;
+      }
+
+      .quote-person strong {
+        color: var(--ink);
+        font-size: 0.92rem;
+      }
+
+      .quote-person span {
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 750;
+      }
+
+      .trust-panel {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: var(--space-4);
+        background: var(--bg-subtle);
+      }
+
+      .trust-panel h3 {
+        max-width: 18rem;
+        margin-bottom: var(--space-3);
+        font-family: var(--font-display);
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        letter-spacing: 0;
+        line-height: 1;
+      }
+
+      .proof-metrics {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-bottom: var(--space-4);
+      }
+
+      .proof-metric {
+        border-top: 1px solid var(--line-strong);
+        padding-top: 0.8rem;
+      }
+
+      .proof-metric strong {
+        display: block;
+        color: var(--ink);
+        font-size: clamp(1.45rem, 3.5vw, 2.2rem);
+        line-height: 1;
+      }
+
+      .proof-metric span {
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .client-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .client-strip li {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: 0.48rem 0.65rem;
+        color: var(--muted);
+        background: var(--bg-elevated);
+        font-size: 0.78rem;
+        font-weight: 850;
+      }
+
+      .delivery-layout {
+        display: grid;
+        gap: var(--space-5);
+        align-items: start;
+      }
+
+      .service-list {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .service-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.9rem;
+        align-items: start;
+      }
+
+      .service-icon {
+        display: inline-flex;
+        width: 2.2rem;
+        height: 2.2rem;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        color: var(--accent-strong);
+        background: var(--accent-soft);
+      }
+
+      .service-icon svg {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+
+      .service-item p {
+        margin-bottom: 0;
+      }
+
+      .delivery-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: var(--space-4);
+        background: var(--bg-elevated);
+        box-shadow: var(--shadow-tight);
+      }
+
+      .delivery-table {
+        display: grid;
+        margin-top: var(--space-3);
+        border-top: 1px solid var(--line);
+      }
+
+      .delivery-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1rem;
+        padding-block: 0.85rem;
+        border-bottom: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .delivery-row strong {
+        color: var(--ink);
+      }
+
+      .cta-section {
+        padding-block: var(--space-7);
+        color: #f4f0e8;
+        background:
+          linear-gradient(135deg, rgba(207, 170, 116, 0.18), transparent 38%),
+          linear-gradient(180deg, #101815, #17251f);
+      }
+
+      .cta-layout {
+        display: grid;
+        gap: var(--space-5);
+        align-items: start;
+      }
+
+      .cta-section h2 {
+        color: #fff8ed;
+      }
+
+      .cta-section p {
+        color: rgba(244, 240, 232, 0.75);
+      }
+
+      .cta-points {
+        display: grid;
+        gap: 0.65rem;
+        margin: var(--space-4) 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .cta-points li {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: rgba(244, 240, 232, 0.78);
+        font-weight: 800;
+      }
+
+      .cta-points svg {
+        width: 1rem;
+        height: 1rem;
+        color: #cfaa74;
+      }
+
+      .lead-form {
+        display: grid;
+        gap: 1rem;
+        border: 1px solid rgba(244, 240, 232, 0.18);
+        border-radius: var(--radius);
+        padding: var(--space-4);
+        background: rgba(255, 253, 248, 0.06);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.2);
+      }
+
+      .form-grid {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .field {
+        display: grid;
+        gap: 0.38rem;
+      }
+
+      .field label {
+        color: rgba(244, 240, 232, 0.9);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .field input,
+      .field select {
+        min-height: 48px;
+        width: 100%;
+        border: 1px solid rgba(244, 240, 232, 0.2);
+        border-radius: var(--radius-sm);
+        padding: 0.78rem 0.85rem;
+        color: #fff8ed;
+        background: rgba(255, 253, 248, 0.08);
+      }
+
+      .field input::placeholder {
+        color: rgba(244, 240, 232, 0.45);
+      }
+
+      .field select {
+        appearance: none;
+        background-image:
+          linear-gradient(45deg, transparent 50%, rgba(244, 240, 232, 0.72) 50%),
+          linear-gradient(135deg, rgba(244, 240, 232, 0.72) 50%, transparent 50%);
+        background-position:
+          calc(100% - 18px) 52%,
+          calc(100% - 12px) 52%;
+        background-size:
+          6px 6px,
+          6px 6px;
+        background-repeat: no-repeat;
+      }
+
+      .field select option {
+        color: #17201c;
+        background: #fffdf8;
+      }
+
+      .form-note {
+        margin: -0.25rem 0 0;
+        color: rgba(244, 240, 232, 0.62);
+        font-size: 0.84rem;
+      }
+
+      .form-status {
+        min-height: 1.3rem;
+        margin: 0;
+        color: #cfaa74;
+        font-size: 0.88rem;
+        font-weight: 850;
+      }
+
+      .site-footer {
+        padding-block: var(--space-6) var(--space-4);
+        background: var(--bg-elevated);
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: var(--space-4);
+        align-items: start;
+      }
+
+      .footer-brand p {
+        max-width: 28rem;
+        margin-top: 1rem;
+      }
+
+      .footer-col h3 {
+        margin-bottom: 0.8rem;
+        font-size: 0.86rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .footer-list {
+        display: grid;
+        gap: 0.48rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-list a,
+      .footer-list span {
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 720;
+      }
+
+      .footer-list a:hover {
+        color: var(--accent-strong);
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+        justify-content: space-between;
+        margin-top: var(--space-5);
+        border-top: 1px solid var(--line);
+        padding-top: var(--space-3);
+        color: var(--faint);
+        font-size: 0.82rem;
+      }
+
+      .reveal {
+        transform: translateY(16px);
+        opacity: 0;
+        transition:
+          transform 600ms ease,
+          opacity 600ms ease;
+      }
+
+      .reveal.is-visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+
+        .reveal {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      @media (min-width: 520px) {
+        .form-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .field-wide {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (min-width: 680px) {
+        .trust-list {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .metrics-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .metric:nth-child(even) {
+          border-right: 1px solid var(--line);
+        }
+
+        .metric:last-child {
+          border-right: 0;
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .steps {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .testimonials {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .proof-metrics {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 900px) {
+        .section-header {
+          grid-template-columns: 0.9fr 1fr;
+        }
+
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.02fr) minmax(380px, 0.88fr);
+        }
+
+        .hero {
+          padding-block: calc(var(--header-h) + var(--space-7)) var(--space-7);
+        }
+
+        .nav-panel {
+          position: static;
+          display: block;
+          border: 0;
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .nav-content {
+          display: flex;
+          width: auto;
+          align-items: center;
+          gap: 1rem;
+          margin-inline: 0;
+          padding: 0;
+        }
+
+        .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+        }
+
+        .nav-links a {
+          padding: 0.55rem 0.62rem;
+          font-size: 0.86rem;
+        }
+
+        .header-actions {
+          display: flex;
+          align-items: center;
+          gap: 0.55rem;
+        }
+
+        .menu-toggle {
+          display: none;
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .why-layout {
+          grid-template-columns: 0.68fr 1fr;
+          align-items: start;
+        }
+
+        .catalogue {
+          grid-template-columns: 0.86fr 1fr;
+        }
+
+        .proof-grid {
+          grid-template-columns: 1fr 0.68fr;
+          align-items: start;
+        }
+
+        .delivery-layout,
+        .cta-layout {
+          grid-template-columns: 0.86fr 1fr;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1.3fr 0.62fr 0.8fr 0.72fr;
+        }
+      }
+
+      @media (min-width: 1080px) {
+        .hero-copy {
+          padding-right: 1rem;
+        }
+
+        .hero-visual {
+          min-height: 610px;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .container {
+          width: min(calc(100% - 1.25rem), var(--max));
+        }
+
+        .brand-name {
+          font-size: 0.9rem;
+        }
+
+        .brand-sub {
+          font-size: 0.58rem;
+        }
+
+        .hero-actions,
+        .cta-actions {
+          display: grid;
+        }
+
+        .trust-list,
+        .supply-items {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+          min-height: 570px;
+        }
+
+        .product-stack {
+          width: auto;
+          right: 1rem;
+        }
+
+        .category-content {
+          max-width: 85%;
+        }
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kafeko",
+        "description": "UK wholesale supplier of coffee shop drinks, ingredients, bar supplies and cafe essentials for trade customers.",
+        "url": "https://example.com",
+        "logo": "https://example.com/kafeko-logo.svg",
+        "telephone": "+44 7392 978883",
+        "email": "trade@kafeko.co.uk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Main Office, 180 Queensway",
+          "addressLocality": "London",
+          "postalCode": "W2 6LY",
+          "addressCountry": "GB"
+        },
+        "areaServed": ["London", "United Kingdom"],
+        "knowsAbout": [
+          "Wholesale coffee beans",
+          "Cafe supplies",
+          "Hospitality drinks supply",
+          "Barista ingredients",
+          "Trade account ordering"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header class="site-header" data-header>
+        <div class="container header-inner">
+          <a class="brand" href="#" aria-label="Kafeko home">
+            <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Kafeko logo">
+              <rect x="4" y="4" width="40" height="40" rx="6" fill="var(--accent)"></rect>
+              <path d="M15 34V14h5.4v8.2L29 14h6.4l-9.3 9.2L36 34h-6.8l-6.9-7.4-1.9 1.8V34H15Z" fill="#fffdf8"></path>
+              <path d="M13 38h22" stroke="#cfaa74" stroke-width="2.4" stroke-linecap="square"></path>
+            </svg>
+            <span class="brand-wordmark">
+              <span class="brand-name">Kafeko</span>
+              <span class="brand-sub">Trade Supply</span>
+            </span>
+          </a>
+
+          <nav class="nav-panel" id="site-nav" aria-label="Primary navigation" data-nav-panel>
+            <div class="container nav-content">
+              <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#trade-account">Trade Account</a>
+                <a href="#delivery">Delivery</a>
+                <a href="#contact">Contact</a>
+              </div>
+              <div class="header-actions">
+                <a class="button button-secondary" href="#trade-account">Download Price List</a>
+                <a class="button button-primary" href="#trade-account">Open Trade Account</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header-utility">
+            <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">UK trade supply for hospitality</p>
+              <h1 id="hero-title">Wholesale cafe supplies without the slow admin.</h1>
+              <p class="lede">
+                Kafeko helps cafes, bakeries, restaurants and hospitality teams order coffee beans,
+                drinks, ingredients and daily essentials through one dependable trade account.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#trade-account">
+                  Open Trade Account
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <a class="button button-secondary" href="#trade-account">Request Price List</a>
+              </div>
+              <ul class="trust-list" aria-label="Wholesale supply benefits">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg>
+                  Trade pricing
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M12 3v18"></path></svg>
+                  Fast UK delivery
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h8"></path></svg>
+                  Low-friction ordering
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12H4Z"></path></svg>
+                  Hospitality range
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual reveal" aria-label="Wholesale coffee supply visual">
+              <div class="hero-photo-wrap">
+                <img
+                  class="hero-photo"
+                  src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                  alt="Sacks of coffee beans prepared for wholesale supply"
+                  width="1200"
+                  height="1500"
+                  fetchpriority="high"
+                >
+              </div>
+              <div class="product-stack" aria-hidden="true">
+                <div class="product-case">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M12 18h24l-2 22H14L12 18Z"></path>
+                    <path d="M18 18V12a6 6 0 0 1 12 0v6"></path>
+                    <path d="M20 28c3-5 8-5 11 0-3 5-8 5-11 0Z"></path>
+                  </svg>
+                  <span><strong>Espresso beans</strong>Roasted for service consistency</span>
+                </div>
+                <div class="product-case">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M13 14h22v26H13V14Z"></path>
+                    <path d="M17 14V9h14v5"></path>
+                    <path d="M17 24h14M17 30h9"></path>
+                  </svg>
+                  <span><strong>Syrups & ingredients</strong>Core lines held in stock</span>
+                </div>
+              </div>
+              <div class="supply-note">
+                <div class="supply-note-top">
+                  <p class="supply-note-title">Trade account snapshot</p>
+                  <span class="status-pill">Stocked lines</span>
+                </div>
+                <div class="supply-items">
+                  <div class="supply-item">
+                    <strong>100+</strong>
+                    <span>trade customers supplied</span>
+                  </div>
+                  <div class="supply-item">
+                    <strong>24h</strong>
+                    <span>dispatch on core SKUs</span>
+                  </div>
+                  <div class="supply-item">
+                    <strong>&pound;100</strong>
+                    <span>typical minimum order</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="metrics-strip" aria-label="Kafeko service metrics">
+          <div class="container metrics-grid">
+            <div class="metric reveal">
+              <strong>100+</strong>
+              <span>active trade customers</span>
+            </div>
+            <div class="metric reveal">
+              <strong>150+</strong>
+              <span>curated cafe supply lines</span>
+            </div>
+            <div class="metric reveal">
+              <strong>24h</strong>
+              <span>next-day dispatch target</span>
+            </div>
+            <div class="metric reveal">
+              <strong>&pound;100</strong>
+              <span>low minimum order placeholder</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="products" aria-labelledby="products-title">
+          <div class="container">
+            <div class="section-header reveal">
+              <div>
+                <p class="eyebrow">Product range</p>
+                <h2 id="products-title">Everything a busy cafe needs to keep service moving.</h2>
+              </div>
+              <p class="lede">
+                A focused wholesale catalogue covering the daily lines hospitality buyers reorder most: coffee,
+                drinks, ingredients, bar supplies and practical essentials.
+              </p>
+            </div>
+
+            <div class="category-grid">
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Coffee beans</h3>
+                  <p>House espresso, guest blends and dependable service coffees selected for commercial machines.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M39 38h82l-8 94H47L39 38Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M47 38V26h66v12M39 38h82l-8 94H47L39 38Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M61 83c12-24 39-24 51 0-12 24-39 24-51 0Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M84 63c2 14 2 26 0 40" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Matcha and tea</h3>
+                  <p>Ceremonial-style matcha, everyday cafe matcha, loose leaf tea and practical service packs.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M40 70h72v18a36 36 0 0 1-72 0V70Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M40 70h72v18a36 36 0 0 1-72 0V70Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M112 78h11a15 15 0 0 1 0 30h-14" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M61 53c8-14 24-18 38-9-8 15-24 18-38 9Z" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Functional drinks</h3>
+                  <p>Cold cans, wellness drinks, kombucha-style options and higher-margin fridge favourites.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M58 25h44v17H58V25Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M58 42h44l7 18v63a12 12 0 0 1-12 12H63a12 12 0 0 1-12-12V60l7-18Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M62 25h36v17H62V25Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M66 85h28M80 71v28" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Syrups and flavourings</h3>
+                  <p>Core syrup flavours, sauces, powders and seasonal lines for menus that need speed.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M64 22h32v22H64V22Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M66 44h28l10 18v61a13 13 0 0 1-13 13H69a13 13 0 0 1-13-13V62l10-18Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M64 22h32v22H64V22Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M66 82h28v24H66V82Z" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Bottled drinks and water</h3>
+                  <p>Still, sparkling, juices and grab-and-go drinks for counters, fridges and events.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M58 27h44v21H58V27Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M60 48h40l9 20v53a14 14 0 0 1-14 14H65a14 14 0 0 1-14-14V68l9-20Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M61 27h38v21H61V27Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M64 94c14-10 26 10 42 0" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+
+              <article class="category-card reveal">
+                <div class="category-content">
+                  <h3>Cups, bar supplies and cafe essentials</h3>
+                  <p>Practical everyday lines including cups, lids, stirrers, cleaning and service consumables.</p>
+                  <a class="text-link" href="#trade-account">View Range <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                </div>
+                <svg class="category-visual" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                  <path d="M48 55h64l-8 80H56L48 55Z" fill="currentColor" opacity=".13"></path>
+                  <path d="M47 55h66l-8 80H55L47 55Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M58 35h44l8 20H50l8-20Z" stroke="currentColor" stroke-width="5"></path>
+                  <path d="M65 81h30" stroke="currentColor" stroke-width="5"></path>
+                </svg>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section dark-section" id="why-us" aria-labelledby="why-title">
+          <div class="container why-layout">
+            <div class="why-intro reveal">
+              <p class="eyebrow">Why trade buyers stay with us</p>
+              <h2 id="why-title">Built around the way hospitality teams actually order.</h2>
+              <p class="lede">
+                Buyers need clear pricing, reliable stock and a supplier who understands that missing essentials on a Friday
+                morning is not a small inconvenience.
+              </p>
+            </div>
+
+            <div class="why-list">
+              <article class="why-item reveal">
+                <span class="why-num">01</span>
+                <div>
+                  <h3>Trade-only pricing</h3>
+                  <p>Approved accounts receive direct trade pricing across core cafe categories, with sensible order quantities and no consumer retail markup.</p>
+                </div>
+              </article>
+              <article class="why-item reveal">
+                <span class="why-num">02</span>
+                <div>
+                  <h3>Reliable stock availability</h3>
+                  <p>We prioritise repeatable lines, continuity ranges and supplier relationships that help keep your menu stable.</p>
+                </div>
+              </article>
+              <article class="why-item reveal">
+                <span class="why-num">03</span>
+                <div>
+                  <h3>Fast ordering process</h3>
+                  <p>Reorder from a focused catalogue, request account pricing quickly and keep procurement simple for busy teams.</p>
+                </div>
+              </article>
+              <article class="why-item reveal">
+                <span class="why-num">04</span>
+                <div>
+                  <h3>Curated cafe-ready range</h3>
+                  <p>We carry products that earn their shelf space: service coffees, matcha, syrups, cold drinks and practical daily essentials.</p>
+                </div>
+              </article>
+              <article class="why-item reveal">
+                <span class="why-num">05</span>
+                <div>
+                  <h3>Delivery built for hospitality</h3>
+                  <p>Fast fulfilment, clear dispatch expectations and support for regular ordering patterns across London and the wider UK.</p>
+                </div>
+              </article>
+              <article class="why-item reveal">
+                <span class="why-num">06</span>
+                <div>
+                  <h3>Dedicated account support</h3>
+                  <p>Get practical help with product availability, substitutions and repeat orders from people who understand service pressure.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="how-title">
+          <div class="container">
+            <div class="section-header reveal">
+              <div>
+                <p class="eyebrow">How it works</p>
+                <h2 id="how-title">A trade account in three practical steps.</h2>
+              </div>
+              <p class="lede">
+                No long discovery process. Tell us about your business, receive account pricing and start placing wholesale orders.
+              </p>
+            </div>
+            <div class="steps">
+              <article class="step reveal">
+                <h3>Apply for a trade account</h3>
+                <p>Send your business details, trading location and the product categories you need to buy regularly.</p>
+              </article>
+              <article class="step reveal">
+                <h3>Get approved and receive pricing</h3>
+                <p>We confirm your account, share the relevant trade price list and answer any range questions.</p>
+              </article>
+              <article class="step reveal">
+                <h3>Order wholesale for your business</h3>
+                <p>Place repeat orders for stocked lines with clear dispatch expectations and account support.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="featured" aria-labelledby="featured-title">
+          <div class="container">
+            <div class="section-header reveal">
+              <div>
+                <p class="eyebrow">Catalogue preview</p>
+                <h2 id="featured-title">Featured ranges for professional service.</h2>
+              </div>
+              <p class="lede">
+                A concise preview of the type of lines available to approved Kafeko trade accounts. Final pricing and availability
+                are confirmed on account setup.
+              </p>
+            </div>
+
+            <div class="catalogue">
+              <figure class="catalogue-image reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;w=1100&amp;q=80"
+                  alt="Fresh coffee beans representing a wholesale catalogue range"
+                  width="1100"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+              <div class="range-list">
+                <article class="range-card reveal">
+                  <div>
+                    <h3>Kafeko Roaster Select</h3>
+                    <p>Espresso blends, single-origin rotations and dependable house bean options.</p>
+                  </div>
+                  <span class="range-code">Beans</span>
+                </article>
+                <article class="range-card reveal">
+                  <div>
+                    <h3>Barista Pantry</h3>
+                    <p>Matcha, chai, chocolate powders, frappe bases and service-ready ingredients.</p>
+                  </div>
+                  <span class="range-code">Drink</span>
+                </article>
+                <article class="range-card reveal">
+                  <div>
+                    <h3>Counter Fridge</h3>
+                    <p>Still water, sparkling water, cold brew, soft drinks and functional grab-and-go lines.</p>
+                  </div>
+                  <span class="range-code">Cold</span>
+                </article>
+                <article class="range-card reveal">
+                  <div>
+                    <h3>Daily Service Essentials</h3>
+                    <p>Cups, lids, cleaning, stirrers, napkins and practical cafe consumables.</p>
+                  </div>
+                  <span class="range-code">Bar</span>
+                </article>
+                <article class="range-card reveal">
+                  <div>
+                    <h3>Seasonal Menu Support</h3>
+                    <p>Flavourings, limited menu ingredients and substitution guidance for seasonal demand.</p>
+                  </div>
+                  <span class="range-code">Menu</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="proof-title">
+          <div class="container proof-grid">
+            <div>
+              <p class="eyebrow reveal">Trusted supply</p>
+              <h2 id="proof-title" class="reveal">Trusted by cafes, bakeries and hospitality teams.</h2>
+              <div class="testimonials">
+                <article class="quote-card reveal">
+                  <blockquote>
+                    &ldquo;Kafeko keeps our core drinks and syrup lines consistent. Ordering is quick, pricing is clear and the team tells us early if a substitution makes sense.&rdquo;
+                  </blockquote>
+                  <div class="quote-person">
+                    <strong>Amelia Hart</strong>
+                    <span>Owner, Hart & Finch Cafe, London</span>
+                  </div>
+                </article>
+                <article class="quote-card reveal">
+                  <blockquote>
+                    &ldquo;We needed a supplier who could handle repeat ordering across several sites without turning every order into a project. Kafeko has been very straightforward.&rdquo;
+                  </blockquote>
+                  <div class="quote-person">
+                    <strong>Daniel Moore</strong>
+                    <span>Operations Manager, Three Bakery Group</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <aside class="trust-panel reveal" aria-label="Business trust metrics">
+              <h3>Commercial supply with practical support.</h3>
+              <div class="proof-metrics">
+                <div class="proof-metric">
+                  <strong>98%</strong>
+                  <span>stocked-line fulfilment target</span>
+                </div>
+                <div class="proof-metric">
+                  <strong>6</strong>
+                  <span>core product categories</span>
+                </div>
+                <div class="proof-metric">
+                  <strong>2k+</strong>
+                  <span>monthly cartons dispatched</span>
+                </div>
+                <div class="proof-metric">
+                  <strong>1</strong>
+                  <span>account for repeat supply</span>
+                </div>
+              </div>
+              <ul class="client-strip" aria-label="Client types">
+                <li>Independent cafes</li>
+                <li>Bakeries</li>
+                <li>Cafe chains</li>
+                <li>Restaurants</li>
+                <li>Hotels</li>
+                <li>Offices</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="delivery" aria-labelledby="delivery-title">
+          <div class="container delivery-layout">
+            <div class="reveal">
+              <p class="eyebrow">Delivery and service</p>
+              <h2 id="delivery-title">Fast fulfilment, clear coverage and repeat ordering convenience.</h2>
+              <p class="lede">
+                Kafeko is set up for trade customers who order frequently and need a supplier that communicates clearly,
+                handles the basics well and keeps service essentials moving.
+              </p>
+            </div>
+
+            <div class="delivery-card reveal">
+              <div class="service-list">
+                <article class="service-item">
+                  <span class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h12v10H3V7Z"></path><path d="M15 10h4l2 3v4h-6v-7Z"></path><circle cx="7" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>
+                  </span>
+                  <div>
+                    <h3>London and UK coverage</h3>
+                    <p>Local delivery routes and nationwide courier options for approved trade accounts.</p>
+                  </div>
+                </article>
+                <article class="service-item">
+                  <span class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"></path><path d="M12 7v5l3 2"></path></svg>
+                  </span>
+                  <div>
+                    <h3>Fast fulfilment</h3>
+                    <p>Core stocked lines are picked quickly, with next-day dispatch targets where available.</p>
+                  </div>
+                </article>
+                <article class="service-item">
+                  <span class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4V4Z"></path><path d="M8 9h8M8 14h5"></path></svg>
+                  </span>
+                  <div>
+                    <h3>Repeat ordering support</h3>
+                    <p>Build regular order lists, check availability and keep your team from rebuilding baskets every week.</p>
+                  </div>
+                </article>
+                <article class="service-item">
+                  <span class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 7v6c0 5 3.5 8 8 8s8-3 8-8V7l-8-4Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+                  </span>
+                  <div>
+                    <h3>Reliable hospitality supply</h3>
+                    <p>Practical help with account setup, product continuity and substitution options when demand changes.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="delivery-table" aria-label="Delivery overview">
+                <div class="delivery-row">
+                  <span>London trade routes</span>
+                  <strong>Regular schedule</strong>
+                </div>
+                <div class="delivery-row">
+                  <span>UK courier dispatch</span>
+                  <strong>Available</strong>
+                </div>
+                <div class="delivery-row">
+                  <span>Account support</span>
+                  <strong>Mon-Fri</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section" id="trade-account" aria-labelledby="trade-title">
+          <div class="container cta-layout">
+            <div class="reveal">
+              <p class="eyebrow">Open a trade account</p>
+              <h2 id="trade-title">Get trade pricing and start ordering for your business.</h2>
+              <p class="lede">
+                Send us your details and we will confirm suitability, share the relevant wholesale price list and help you build
+                a practical opening order.
+              </p>
+              <ul class="cta-points">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg> Pricing for approved trade customers</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg> Product guidance for cafes and hospitality teams</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg> Fast setup for businesses ready to order</li>
+              </ul>
+            </div>
+
+            <form class="lead-form reveal" action="/api/trade-enquiry" method="post" data-lead-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="business-name">Business name</label>
+                  <input id="business-name" name="business-name" type="text" autocomplete="organization" placeholder="Example Cafe Ltd" required>
+                </div>
+                <div class="field">
+                  <label for="contact-name">Contact name</label>
+                  <input id="contact-name" name="contact-name" type="text" autocomplete="name" placeholder="Your name" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="buyer@example.co.uk" required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="020 0000 0000" required>
+                </div>
+                <div class="field field-wide">
+                  <label for="business-type">Business type</label>
+                  <select id="business-type" name="business-type" required>
+                    <option value="">Select business type</option>
+                    <option>Independent coffee shop</option>
+                    <option>Bakery</option>
+                    <option>Cafe chain</option>
+                    <option>Restaurant</option>
+                    <option>Hotel or hospitality group</option>
+                    <option>Office or workplace</option>
+                    <option>Other trade business</option>
+                  </select>
+                </div>
+                <div class="field field-wide" hidden>
+                  <label for="website">Website</label>
+                  <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+              </div>
+              <p class="form-note">We usually respond within one working day. Your details are sent directly to the Kafeko trade team.</p>
+              <button class="button button-dark" type="submit">Submit Trade Enquiry</button>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand" href="#" aria-label="Kafeko home">
+                <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Kafeko logo">
+                  <rect x="4" y="4" width="40" height="40" rx="6" fill="var(--accent)"></rect>
+                  <path d="M15 34V14h5.4v8.2L29 14h6.4l-9.3 9.2L36 34h-6.8l-6.9-7.4-1.9 1.8V34H15Z" fill="#fffdf8"></path>
+                  <path d="M13 38h22" stroke="#cfaa74" stroke-width="2.4" stroke-linecap="square"></path>
+                </svg>
+                <span class="brand-wordmark">
+                  <span class="brand-name">Kafeko</span>
+                  <span class="brand-sub">Trade Supply</span>
+                </span>
+              </a>
+              <p>
+                Wholesale coffee shop supplies for UK cafes, bakeries, restaurants, hotels and hospitality buyers.
+              </p>
+            </div>
+
+            <div class="footer-col">
+              <h3>Quick links</h3>
+              <ul class="footer-list">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#trade-account">Trade Account</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <ul class="footer-list">
+                <li><span>Main Office</span></li>
+                <li><span>180 Queensway</span></li>
+                <li><span>London W2 6LY</span></li>
+                <li><a href="mailto:trade@kafeko.co.uk">trade@kafeko.co.uk</a></li>
+                <li><a href="tel:+447392978883">07392978883</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Trade accounts</h3>
+              <ul class="footer-list">
+                <li><a href="#trade-account">Open Trade Account</a></li>
+                <li><a href="#trade-account">Request Price List</a></li>
+                <li><span>Account support: Mon-Fri</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; <span data-year></span> Kafeko Ltd. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const header = document.querySelector("[data-header]");
+        const menuToggle = document.querySelector("[data-menu-toggle]");
+        const navPanel = document.querySelector("[data-nav-panel]");
+        const form = document.querySelector("[data-lead-form]");
+        const status = document.querySelector("[data-form-status]");
+        const year = document.querySelector("[data-year]");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        year.textContent = new Date().getFullYear();
+
+        function syncHeader() {
+          const scrolled = window.scrollY > 14;
+          header.classList.toggle("is-scrolled", scrolled);
+        }
+
+        function closeMenu() {
+          document.body.classList.remove("nav-open");
+          header.classList.remove("nav-active");
+          navPanel.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open menu");
+        }
+
+        function toggleMenu() {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+          document.body.classList.toggle("nav-open", !isOpen);
+          header.classList.toggle("nav-active", !isOpen);
+          navPanel.classList.toggle("is-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "Open menu" : "Close menu");
+        }
+
+        window.addEventListener("scroll", syncHeader, { passive: true });
+        syncHeader();
+
+        menuToggle.addEventListener("click", toggleMenu);
+
+        navPanel.addEventListener("click", function (event) {
+          if (event.target.matches("a")) {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+
+        if (!reduceMotion && "IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+          );
+
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+        }
+
+        form.addEventListener("submit", async function (event) {
+          event.preventDefault();
+          if (!form.checkValidity()) {
+            status.textContent = "Please complete the required fields.";
+            return;
+          }
+
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          const payload = Object.fromEntries(new FormData(form).entries());
+          const controller = new AbortController();
+          const timeout = window.setTimeout(function () {
+            controller.abort();
+          }, 15000);
+
+          submitButton.disabled = true;
+          submitButton.textContent = "Sending...";
+          status.textContent = "";
+
+          try {
+            const response = await fetch(getFormEndpoint(), {
+              method: "POST",
+              headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(payload),
+              signal: controller.signal
+            });
+            const result = await response.json().catch(function () {
+              return {};
+            });
+
+            if (!response.ok) {
+              throw new Error(result.message || "Unable to send enquiry.");
+            }
+
+            status.textContent = result.message || "Thank you. Your trade enquiry has been sent.";
+            form.reset();
+          } catch (error) {
+            if (error.name === "AbortError") {
+              status.textContent = "The enquiry took too long to send. Please try again or email trade@kafeko.co.uk.";
+            } else {
+              status.textContent = error.message || "There was a problem sending your enquiry. Please email trade@kafeko.co.uk.";
+            }
+          } finally {
+            window.clearTimeout(timeout);
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+
+        function getFormEndpoint() {
+          if (window.location.protocol === "file:") {
+            return "http://localhost:3000/api/trade-enquiry";
+          }
+
+          return form.action;
+        }
+      })();
+    </script>
+  </body>
+</html>
